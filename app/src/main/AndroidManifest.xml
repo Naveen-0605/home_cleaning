@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homecleaning">
+
+    <application
+        android:allowBackup="true"
+        android:label="CleanHome"
+        android:theme="@style/Theme.HomeCleaning">
+
+        <activity android:name=".BookingActivity"
+            android:theme="@style/Theme.HomeCleaning.NoActionBar"/>
+        <activity android:name=".ServiceDetailActivity"
+            android:theme="@style/Theme.HomeCleaning.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.HomeCleaning.NoActionBar"/>
+
+
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/Theme.HomeCleaning.NoActionBar" />
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Theme.HomeCleaning.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
